@@ -1,0 +1,234 @@
+html {
+  overflow-y: hidden;
+  overflow-x: auto;
+  display: inline-block;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  /* pour ie et mozilla */
+  -ms-overlow-style: none;
+  scrollbar-width: none;
+  font-family: "Poppins", sans-serif;
+  background-color: #282828;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.blocHorizontal {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+}
+
+.slide {
+  margin-bottom: 5%;
+  width: 1680px;
+  height: 947px;
+  top: 0;
+  font-size: 30px;
+}
+
+.slide img {
+  min-width: 1680px;
+  min-height: 947px;
+  width: 1680px;
+  height: 947px;
+}
+
+.manneken-pis {
+  width: 1432px !important;
+  max-width: 1432px !important;
+  height: 1080px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.left-div {
+  background-color: #282828;
+  width: 21%;
+  min-width: 300px;
+  height: 400vw;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+}
+/* container description */
+
+.description {
+  width: 20%;
+  min-width: 300px;
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* titre */
+
+.title {
+  z-index: 4;
+  font-size: 5.2vw;
+  margin-left: 10%;
+  margin-top: 0%;
+  color: white;
+  font-family: "Noto Serif", serif;
+}
+
+/* texte */
+
+.text {
+  z-index: 4;
+  height: auto;
+  white-space: normal !important;
+  color: white;
+  margin-left: 10%;
+  margin-top: -18%;
+  width: 87%;
+  font-size: 1vw;
+}
+
+/* data */
+
+.data {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 1.2vw;
+  margin-left: 10%;
+  width: 87%;
+}
+
+.data-2 {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 20px;
+  margin-left: 10%;
+  margin-top: -15%;
+  width: 87%;
+}
+
+.num {
+  font-size: 30px;
+}
+
+.delay {
+  margin-left: 2%;
+  margin-top: 12%;
+  opacity: 0;
+  animation: 1s appearance;
+  animation-delay: 2.2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes appearance {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* graphique */
+
+.absolute {
+  z-index: 4;
+  margin-top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  border-radius: 20px;
+  color: white;
+}
+
+#myChart {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* animation */
+
+#animation_container {
+  position: fixed;
+  z-index: 2;
+  left: 20%;
+}
+
+#canvas {
+  display: block;
+  width: 82% !important;
+  min-height: 680px;
+  height: 100% !important;
+  min-width: 1520px;
+}
+
+#dom_overlay_container {
+  pointer-events: none;
+  overflow: hidden;
+  display: block;
+}
+
+/* full screen */
+
+#fullscreen-button {
+  cursor: pointer;
+  background-color: #282828;
+  padding: 0.5% 1%;
+  border-radius: 25px;
+  color: aliceblue;
+  position: fixed;
+  z-index: 80;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* flèche
+
+    .arrows {
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      width: 123%;
+      left: 2%;
+      justify-content: space-between;
+      z-index: 90;
+      bottom: 0;
+    }
+
+    .arrows img {
+      width: 20%;
+      cursor: pointer;
+    }
+
+    .info {
+      position: absolute;
+      z-index: 100;
+      color: antiquewhite;
+    } 
+*/
+
+/* animation */
+
+.unreveal {
+  opacity: 0;
+}
+
+.reveal {
+  opacity: 1 !important;
+  transition: 1s;
+}

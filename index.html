@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="./static/chart.js"></script>
+    <link rel="stylesheet" href="css/animation.css" />
+    <meta name="authoring-tool" content="Adobe_Animate_CC" />
+    <link
+      rel="shortcut icon"
+      href="./images/1x/logo_hector.png"
+      type="image/x-icon"
+    />
+    <title>index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/scroll.js"></script>
+  </head>
+  <body onload="init();" style="margin: 0px">
+    <div class="container">
+      <div id="animation_container">
+        <canvas id="canvas"></canvas>
+        <div id="dom_overlay_container"></div>
+      </div>
+      <div class="left-div"></div>
+      <div class="right-div">
+        <div class="blocHorizontal">
+          <!-- KREMLIN -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_kremlin_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/kremlin_russie.jpg"
+              alt="kremlin russie"
+              class="kremlin images"
+              id="image-1"
+            />
+            <div class="description unreveal unreveal-1">
+              <h1 class="title-1 title">Kremlin</h1>
+              <p class="text-1 1 text">
+                Built between 1555 and 1561, it’s no wonder that Saint Basil’s
+                Cathedral is one of the most unique feats of Russian
+                architecture ! The monument is world-renowned for its fairytale
+                appearance and powerful colors : but did you know that the
+                cathedral was originally painted white with golden domes only
+                until 17th century ? Its dreamlike decoration comes from a
+                passage in the Book Of Revelation, which describes the Heavenly
+                City.
+              </p>
+              <div class="absolute 1 graph-1">
+                <canvas id="myChart"></canvas>
+              </div>
+              <div class="data">
+                <p class="num">600</p>
+                <p class="delay">thousands of visitors/year</p>
+              </div>
+              <div class="data-2">
+                <p class="num">6</p>
+                <p class="delay">years of construction</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_kremlin_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <!-- LONDON EYE -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_londoneye_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/london-eye.jpg"
+              alt="london eye"
+              id="image-2"
+              class="london-eye images"
+            />
+            <div class="description unreveal unreveal-2">
+              <h1 class="title-2 title">London Eye</h1>
+              <p class="text-2 2 text">
+                A lot of people know about the London eye, but do you know what
+                is its particularity ? <br />One tour takes about 30 minutes so
+                the capsule doesn't stop for the passengers, it’s more like a
+                bicycle wheel than a Ferris wheel, would you hop in ?
+              </p>
+              <div class="absolute 2 graph-2">
+                <canvas id="myChart2"></canvas>
+              </div>
+
+              <div class="data">
+                <p class="num">3.5</p>
+                <p class="delay">millions of visitors/year</p>
+              </div>
+              <div class="data-2">
+                <p class="num">3</p>
+                <p class="delay">years of construction</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_londoneye_exit.png"
+              alt="kremlin russie"
+              class="images"
+            />
+          </div>
+
+          <!-- MANNEKEN PIS 
+          <div class="slide">
+            <img
+              src="./images/1x/menneken-piq.jpg"
+              alt="Manneken pis"
+              id="image-3"
+              class="manneken-pis images"
+            />
+            <div class="description unreveal unreveal-3">
+              <h1 class="title-3 title">Manneken Pis</h1>
+              <p class="text-3 3 text">
+                The manneken-pis is a statue in Brussels and as its name means
+                in the language of brussel, it’s a man who pee. This statue is
+                the symbol of brussel around the world and represents Brussels
+                and shows to the world their sense of humor and their
+                independence of mind. Today the real Manneken pis is in the
+                museum of the city of brussel because someone in 1965 tried to
+                steal the statue.
+              </p>
+              <div class="absolute -3 3 graph-3">
+                <canvas id="myChart3"></canvas>
+              </div>
+              <div class="data">
+                <p class="num">11</p>
+                <p class="delay">millions of visitors/year</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- MONT FUJI -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_fuji_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/mont fuji -100.jpg"
+              alt="Mont Fuji"
+              id="image-4"
+              class="mont-fuji images"
+            />
+            <div class="description unreveal unreveal-4">
+              <h1 class="title-4 title">Mount Fuji</h1>
+              <p class="text-4 4 text">
+                Mount Fuji is the symbol of the japan around the world, this
+                mount is a volcano in the urban area of Tokyo, he is in the
+                middle of the japan. This volcano is a cone with almost perfect
+                symmetry. And this is the most visited mountain in the world.
+                And the mount fuji is the highest point of the japan.
+                <br /><br />
+                <strong>The last eruption : 1707</strong>
+              </p>
+              <div class="absolute 4 graph-4">
+                <canvas id="myChart4"></canvas>
+              </div>
+              <div class="data">
+                <p class="num">300</p>
+                <p class="delay">thousands of visitors/year</p>
+              </div>
+              <div class="data-2">
+                <p class="num">700</p>
+                <p class="delay">meter : width of crater</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_fuji_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+
+          <!-- SEOUL TOWER -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_ntower_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/n_seoul_tower.jpg"
+              alt="n_seoul_tower"
+              id="image-5"
+              class="Seoul-tower images"
+            />
+            <div class="description unreveal unreveal-5">
+              <h1 class="title-5 title">N Seoul Tower</h1>
+              <p class="text-5 5 text">
+                Do you know what does the N stands for ? <br />It’s for Namsan,
+                nature and new ! A really nice place to date since you can have
+                a breathtaking view, delicious restaurants, digital art
+                projections at the same spot !<br />
+                And the icing on the cake : it’s one of the 40 attractions on
+                the world where you can lock your special love padlock !
+              </p>
+              <div class="absolute 5 graph-5">
+                <canvas id="myChart5"></canvas>
+              </div>
+
+              <div class="data">
+                <p class="num">3</p>
+                <p class="delay">millions of visitors/year</p>
+              </div>
+              <div class="data-2">
+                <p class="num">5</p>
+                <p class="delay">years of construction</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_ntower_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+
+          <!-- petra -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_petra_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/petra.jpg"
+              alt="petra"
+              id="image-6"
+              class="petra images"
+            />
+            <div class="description unreveal unreveal-6">
+              <h1 class="title-6 title">Petra</h1>
+              <p class="text-6 6 text">
+                Petra was an ancient city and the center of an ancient kingdom
+                of Hellenistic and Roman times. The ruin of the cities is
+                currently in the country of Jordan close to the city of Wadi
+                Mūsā. The valley is enclosed by sandstone cliffs veined with
+                shades of red and purple varying to pale yellow, and for this
+                reason Petra was called a “rose-red city ”. Petra was built in
+                the 8th century BC.
+                <br />
+                <strong> Years of construction : 1200 before J.C.</strong>
+              </p>
+              <div class="absolute 6 graph-6">
+                <canvas id="myChart6"></canvas>
+              </div>
+              <div class="data">
+                <p class="num">810</p>
+                <p class="delay">thousands of visitors/year</p>
+              </div>
+              <div class="data-2">
+                <p class="num">40</p>
+                <p class="delay">years of construction</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_petra_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+
+          <!-- Temple -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_temple_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/temple interdit-100.jpg"
+              alt="Temple interdit"
+              id="image-7"
+              class="temple images"
+            />
+            <div class="description unreveal unreveal-7">
+              <h1 class="title-7 title">Forbidden city</h1>
+              <p class="text-7 7 text">
+                The Forbidden city is an imperial palace and was built for the
+                Ming and Qing dynasty. The place was the head office the empire
+                of china during 5 centuries. The name of Forbidden city was
+                choose because the palace was considered as an divine places so
+                ordinary people could not enter.
+              </p>
+              <div class="data">
+                <p class="num">1</p>
+                <p class="delay">million workers for construction</p>
+              </div>
+              <div class="data-2">
+                <p class="num">14</p>
+                <p class="delay">years of construction</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_temple_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <!-- ULUN -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_ulun_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/Ulun_Danu_Bratan__bali.jpg"
+              alt="Ulun Danu Bratan"
+              id="image-8"
+              class="ulun-bali images"
+            />
+            <div class="description unreveal unreveal-8">
+              <h1 class="title-8 title">Ulun Danu Bratan</h1>
+              <p class="text-8 8 text">
+                Also called Pura Bratan, Ulun Danu Bratan is one of the most
+                famous Hindu Shaivite temple in Bali, Indonesia.<br />
+                Built in 1633 on the shores of Lake Bratan in the mountains near
+                Bedugul,<br />
+                the temple is originally used for offerings and ceremonies
+                dedicated to the water goddess Dewi Danu.<br />
+                Pura Bratan is a hotbed of tourist activity : if you visit it,
+                you will be surprised and charmed by these magical gardens and
+                gorgeous mural of exotic flowers ! <br /><br />
+                <strong>Built in 1633</strong>
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_ulun_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+
+          <!-- arco santa auguste-->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_arco_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/arco_santa_augusta.png"
+              alt="Arco santa augusta"
+              id="image-9"
+              class="arco-santa-augusta images"
+            />
+            <div class="description unreveal unreveal-9">
+              <h1 class="title-9 title">Arco Santa Augusta</h1>
+              <p class="text-9 9 text">
+                The Arco da Rua Augusta is a small triumphal arch located in the
+                northern part of the Praça do Comércio in Lisbon . The
+                construction of this arch was planned in 1759, after the
+                destruction of the city center due to the 1755 earthquake. It
+                was designed to be the gateway to the city, but the current
+                version was completed later in 1975.
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_arco_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+
+          <!-- ATONIUM -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_atonium_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              id="image-10"
+              src="./images/1x/atonium.png"
+              alt="Atonium"
+              class="atonium images"
+            />
+            <div class="description unreveal unreveal-10">
+              <h1 class="title-10 title">Atonium</h1>
+              <p class="text-10 10 text">
+                Built for the 1958 World Expo of Brussels to embody the faith in
+                scientific progress at the time, the Atonium is one of the most
+                famous monument in Belgium. This technical feat depicts nine
+                iron atoms in the shape of the unit cell of an iron crystal.
+                Surprise ! In addition to being a futuristic and unique
+                monument, the Atomium also contains an extraordinary museum that
+                welcomes 600 000 visitors each years. These mini museums are
+                both permanent and rotating exhibitions held in the five
+                sphères.
+              </p>
+              <div class="absolute 10 graph-10">
+                <canvas id="myChart10"></canvas>
+              </div>
+              <div class="data">
+                <p class="num">600</p>
+                <p class="delay">thousands of visitors/year</p>
+              </div>
+              <div class="data-2">
+                <p class="num">3</p>
+                <p class="delay">years of construction</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_atonium_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+
+          <!-- CORCOVADO -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_corcovado_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              id="image-11"
+              src="./images/1x/corcovado.png"
+              alt="corcovado"
+              class="corcovado images"
+            />
+            <div class="description unreveal unreveal-11">
+              <h1 class="title-11 title">Corcovado</h1>
+              <p class="text-11 11 text">
+                The corcovado is at the top of the mountain of the corcovado
+                measuring 700 m, it dominates the city of Rio. Surrounded by the
+                Tijuca Forest (the largest urban forest in the world), Arrived
+                at the top, a 360º panoramic view of the city of Rio de Janeiro.
+                Christ the Redeemer is one of the greatest statues of Christ in
+                the world and its total weight is estimated at. 38 m.it was
+                built in 1931 and welcomes 600 000 visitors per year.Heitor da
+                Silva Costa was the architect in charge of the project.
+              </p>
+              <div class="absolute 11 graph-11">
+                <canvas id="myChart11"></canvas>
+              </div>
+
+              <div class="data">
+                <p class="num">600</p>
+                <p class="delay">thousands of visitors/year</p>
+              </div>
+              <div class="data-2">
+                <p class="num">1931</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_corcovado_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+
+          <!-- OPERA  -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_sidney_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              id="image-12"
+              src="./images/1x/opera_sidney.png"
+              alt="Opéra sidney"
+              class="opera-sidney images"
+            />
+            <div class="description unreveal unreveal-12">
+              <h1 class="title-12 title">Sydney opera</h1>
+              <p class="text-12 12 text">
+                The Sydney Opera House is one of the most famous buildings in
+                the city of Sydney, Australia. This iconic building, designed by
+                Danish architect Jørn Utzon, is located on the shores of Sydney
+                Harbour, offering spectacular views of the water and the city.
+                The Sydney Opera House is not only for entertainment, but also a
+                meeting place for Sydney residents and visitors.The weight is
+                estimated at 65 m and it welcomes 8,2 millions of visitors.
+                tors.
+              </p>
+              <div class="absolute 12 graph-12">
+                <canvas id="myChart12"></canvas>
+              </div>
+
+              <div class="data">
+                <p class="num">8.2</p>
+                <p class="delay">million of visitors/year</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_sidney_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+
+          <!-- Tour de Belem-->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_belem_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              id="image-13"
+              src="./images/1x/tour_de_belem.png"
+              alt="Tour de belem"
+              class="tour de belem images"
+            />
+            <div class="description unreveal unreveal-13">
+              <h1 class="title-13 title">Belem Tower</h1>
+              <p class="text-13 13 text">
+                The Belém Tower is located in the city of Lisbon, Portugal. This
+                monument was constructed by the King Jean II of Portugal
+                (1455-95).The purpose of it is to gateway to the city of Lisbon
+                but also as a defense system against possible invasions and
+                attacks from the Tagus. It measures 30 m.
+              </p>
+              <div class="absolute 13 graph-13">
+                <canvas id="myChart13"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_belem_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+
+          <!-- Pyramide -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_pyramide_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              id="image-14"
+              src="./images/1x/pyramides.png"
+              alt="pyramides egypte"
+              class="pyramide images"
+            />
+            <div class="description unreveal unreveal-14">
+              <h1 class="title-14 title">Giza's Pyramids</h1>
+              <p class="text-14 14 text">
+                Would you become a God in the afterlife if you manage to build a
+                481 feet tall pyramid ? Well, that’s what the Egyptian pharaohs
+                tried to do 4500 years ago. Do you think they did it ?
+              </p>
+
+              <div class="absolute 14 graph-14">
+                <canvas id="myChart14"></canvas>
+              </div>
+
+              <div class="data">
+                <p class="num">14</p>
+                <p class="delay">million of visitors/year</p>
+              </div>
+              <div class="data-2">
+                <p class="num">60</p>
+                <p class="delay">years of construction</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_pyramide_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <!-- PISE -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_pise_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              id="image-15"
+              src="./images/1x/tour de pise.png"
+              alt="tour de pise"
+              class="tour-pise images"
+            />
+
+            <div class="description unreveal unreveal-15">
+              <h1 class="title-15 title">Pisa Tower</h1>
+              <p class="text-15 15 text">
+                His real (italian) name is Torre Pendente di Pisa and is
+                actually only inclined by around 4 degrees. But do you know the
+                reason why ? Actually it started inclinating itself since the
+                very start of the construction and they leaved it like that,
+                until it was safe for tourists to climb it. By the way, if you
+                want to climb it, good luck because you’ll have to take 251
+                staircases !
+              </p>
+              <div class="absolute 15 graph-15">
+                <canvas id="myChart15"></canvas>
+              </div>
+
+              <div class="data">
+                <p class="num">2</p>
+                <p class="delay">million of visitors/year</p>
+              </div>
+              <div class="data-2">
+                <p class="num">177</p>
+                <p class="delay">years of construction</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_pise_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+
+          <!-- Liberté -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_liberty_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              id="image-16"
+              src="./images/1x/statue liberté.png"
+              alt="Statue de la liberté"
+              class="statue-liberty images"
+            />
+            <div class="description unreveal unreveal-16">
+              <h1 class="title-16 title">Lady liberty</h1>
+              <p class="text-16 16 text">
+                The Lady liberty is a symbol of the United States around the
+                world, the Lady liberty was a gift from France in commemoration
+                of the alliance of the two countries during the American War of
+                Independence.The Statue is located on Liberty Island, a short
+                ferry ride from America’s most famous immigration center,in new
+                york.
+              </p>
+              <div class="absolute 16 graph-16">
+                <canvas id="myChart16"></canvas>
+              </div>
+              <div class="data">
+                <p class="num">4</p>
+                <p class="delay">million of visitors/year</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_liberty_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+
+          <!-- TOUR EIFFEL -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_toureiffel_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              id="image-17"
+              src="./images/1x/toureffeil.png"
+              alt="Tour Effeil"
+              class="tour-effeil images"
+            />
+            <div class="description unreveal unreveal-17">
+              <h1 class="title-17 title">Eiffel Tower</h1>
+              <p class="text-17 17 text">
+                The eiffel tower is the monument that is the symbol of France
+                and mostly the city of Paris. The tower is located in the center
+                of Paris and was created by Gustave Eiffel for the World
+                Exhibition of 1889. The eiffel tower is currently the most
+                visited monument around the world.
+              </p>
+              <div class="absolute 17 graph-17">
+                <canvas id="myChart17"></canvas>
+              </div>
+              <div class="data">
+                <p class="num">7</p>
+                <p class="delay">million of visitors/year</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_toureiffel_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+
+          <!-- COLISEE -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_colisee_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              id="image-18"
+              src="./images/1x/colisee.png"
+              alt="Colisée"
+              class="colisee images"
+            />
+            <div class="description unreveal unreveal-18">
+              <h1 class="title-18 title">Colosseum</h1>
+              <p class="text-18 18 text">
+                The Colosseum is a giant amphitheater in Rome. The construction
+                began during antiquity with the reign of Vespasian. It was built
+                in the 70 and 72 BC. The Colesseum is the symbol of the city of
+                Rome.
+              </p>
+              <div class="absolute 18 graph-18">
+                <canvas id="myChart18"></canvas>
+              </div>
+              <div class="data">
+                <p class="num">7.7</p>
+                <p class="delay">million of visitors/year</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_colisee_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+
+          <!-- TAJ MAHAL -->
+
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_tajmahal_enter.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+          <div class="slide">
+            <img
+              id="image-19"
+              src="./images/1x/taj-mahal.png"
+              alt="Taj mahal"
+              class="taj-mahal images"
+            />
+            <div class="description unreveal unreveal-19">
+              <h1 class="title-19 title">Taj Mahal</h1>
+              <p class="text-19 19 text">
+                It took 22 years to build the Taj Mahal! In 1632, the emperor
+                Shah Jahan decided to call upon 9 architects to build the most
+                perfect and closest representation of Paradise on Earth, as a
+                tribute to his late wife. This majestic construction is still
+                considered today as a masterpiece of architecture and is
+                registered since 1983 on the Unesco heritage list.
+              </p>
+              <div class="absolute 19 graph-19">
+                <canvas id="myChart19"></canvas>
+              </div>
+              <div class="data">
+                <p class="num">6.5</p>
+                <p class="delay">million of visitors/year</p>
+              </div>
+              <div class="data-2">
+                <p class="num">22</p>
+                <p class="delay">years of construction</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/1x/transition/1x/transi_tajmahal_exit.png"
+              alt="kremlin russie"
+              class="kremlin images"
+            />
+          </div>
+        </div>
+        <a id="fullscreen-button">Full Screen</a>
+      </div>
+    </div>
+
+    <!-- 
+    <div class="arrows">
+      <div class="left-arrow">
+        <img
+          src="./images/fleche-gauche-modified.png"
+          alt="flèche gauche"
+          class="left"
+        />
+      </div>
+      <div class="right-arrow">
+        <img
+          src="./images/fleche-droite-modified.png"
+          alt="flèche droite"
+          class="right"
+        />
+      </div>
+    </div>-->
+
+    <script src="./js/apparition-texte.js"></script>
+    <script src="js/graphique.js"></script>
+    <script>
+      const button = document.getElementById("fullscreen-button");
+      button.addEventListener("click", function () {
+        const element = document.documentElement;
+        if (document.fullscreenElement) {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+          }
+        } else {
+          if (element.requestFullscreen) {
+            element.requestFullscreen();
+          } else if (element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+          } else if (element.webkitRequestFullscreen) {
+            element.webkitRequestFullscreen();
+          } else if (element.msRequestFullscreen) {
+            element.msRequestFullscreen();
+          }
+        }
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".num").counterUp({
+          time: 1000,
+        });
+      });
+    </script>
+  </body>
+</html>
