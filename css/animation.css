@@ -234,53 +234,54 @@ body {
   transition: 1s;
 }
 
-@media screen and (max-width: 500px) {
+/*---media start----*/
+@media (max-width: 468px) {
   .text {
-    margin-top: 0%;
+    margin-top: 0% !important;
   }
   #fullscreen-button {
-    display: none;
+    display: none !important;
   }
   #animation_container {
     height: auto !important;
     width: 125% !important;
-    min-height: 100px;
-    min-width: 200px;
-    left: 0%;
+    min-height: 100px !important;
+    min-width: 200px !important;
+    left: 0% !important;
   }
   #canvas {
-    top: 0%;
+    top: 0% !important;
   }
   .left-div {
-    width: 100%;
-    min-height: 300px;
-    height: 400px;
-    top: auto;
-    bottom: 0;
-    z-index: 10;
-    background-color: #282828;
+    width: 100% !important;
+    min-height: 300px !important;
+    height: 400px !important;
+    top: auto !important;
+    bottom: 0 !important;
+    z-index: 10 !important;
+    background-color: #282828 !important;
   }
   .description {
-    width: 100%;
-    min-height: 50%;
-    height: auto;
-    position: fixed;
-    top: auto;
-    z-index: 4;
-    left: 0;
-    bottom: 0;
-    background-color: #282828;
+    width: 100% !important;
+    min-height: 50% !important;
+    height: auto !important;
+    position: fixed !important;
+    top: auto !important;
+    z-index: 4 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    background-color: #282828 !important;
   }
   .slide {
-    width: 1680px;
-    height: 947px;
-    font-size: 20px;
+    width: 1680px !important;
+    height: 947px !important;
+    font-size: 20px !important;
   }
 
   .slide img {
-    min-width: 1680px;
-    min-height: 947px;
-    width: 1680px;
-    height: 947px;
+    min-width: 1680px !important;
+    min-height: 947px !important;
+    width: 1680px !important;
+    height: 947px !important;
   }
 }
