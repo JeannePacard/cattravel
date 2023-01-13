@@ -20,6 +20,17 @@ const unGraphique = new Chart(unContexte, {
       },
     ],
   },
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 /* deuxieme */
@@ -57,6 +68,17 @@ const unGraphique2 = new Chart(unContexte2, {
         borderWidth: 1,
       },
     ],
+  },
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
   },
 });
 
@@ -96,6 +118,18 @@ const unGraphique3 = new Chart(unContexte3, {
       },
     ],
   },
+  
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 }); */
 
 /* quatre */
@@ -133,6 +167,18 @@ const unGraphique4 = new Chart(unContexte4, {
         borderWidth: 1,
       },
     ],
+  },
+
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
   },
 });
 
@@ -172,6 +218,18 @@ const unGraphique5 = new Chart(unContexte5, {
       },
     ],
   },
+
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 /* six */
@@ -209,6 +267,18 @@ const unGraphique6 = new Chart(unContexte6, {
         borderWidth: 1,
       },
     ],
+  },
+
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
   },
 });
 
@@ -248,6 +318,18 @@ const unGraphique10 = new Chart(unContexte10, {
       },
     ],
   },
+
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 /* onze */
@@ -285,6 +367,18 @@ const unGraphique11 = new Chart(unContexte11, {
         borderWidth: 1,
       },
     ],
+  },
+
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
   },
 });
 
@@ -324,6 +418,18 @@ const unGraphique12 = new Chart(unContexte12, {
       },
     ],
   },
+
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 /* treize */
@@ -361,6 +467,18 @@ const unGraphique13 = new Chart(unContexte13, {
         borderWidth: 1,
       },
     ],
+  },
+
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
   },
 });
 
@@ -402,6 +520,18 @@ const unGraphique14 = new Chart(unContexte14, {
       },
     ],
   },
+
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 /* quinze */
@@ -439,6 +569,18 @@ const unGraphique15 = new Chart(unContexte15, {
         borderWidth: 1,
       },
     ],
+  },
+
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
   },
 });
 
@@ -478,6 +620,18 @@ const unGraphique16 = new Chart(unContexte16, {
       },
     ],
   },
+
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 /* dixsept */
@@ -515,6 +669,18 @@ const unGraphique17 = new Chart(unContexte17, {
         borderWidth: 1,
       },
     ],
+  },
+
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
   },
 });
 
@@ -554,6 +720,18 @@ const unGraphique18 = new Chart(unContexte18, {
       },
     ],
   },
+
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
 });
 
 /* dixneuf */
@@ -591,5 +769,17 @@ const unGraphique19 = new Chart(unContexte19, {
         borderWidth: 1,
       },
     ],
+  },
+
+  options: {
+    plugins: {
+      title: {
+        text: "Comparison with the size of the Eiffel Tower (meters)",
+        display: true,
+      },
+      legend: {
+        display: false,
+      },
+    },
   },
 });
