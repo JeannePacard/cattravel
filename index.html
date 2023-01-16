@@ -12,6 +12,7 @@
     <meta charset="UTF-8" />
     <script type="text/javascript" src="./static/chart.js"></script>
     <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/loader.scss" />
     <meta name="authoring-tool" content="Adobe_Animate_CC" />
     <link
       rel="shortcut icon"
@@ -31,13 +32,26 @@
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/scroll.js"></script>
-    <script>
-      alert(
-        "Pour une meilleure accessibilité, merci d'utiliser le site sur ordinateur. Scroller vers le haut et le bas pour défiler sur ordinateur portable."
-      );
-    </script>
   </head>
   <body onload="init();" style="margin: 0px">
+    <div class="loader">
+      <div class="loader-wrapper">
+        <div class="loader">
+          <div class="roller"></div>
+          <div class="roller"></div>
+        </div>
+
+        <div id="loader2" class="loader">
+          <div class="roller"></div>
+          <div class="roller"></div>
+        </div>
+
+        <div id="loader3" class="loader">
+          <div class="roller"></div>
+          <div class="roller"></div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div id="animation_container">
         <canvas id="canvas"></canvas>
@@ -888,6 +902,9 @@
       </div>
     </div>
 
+    <div class="mobile-restriction">
+      <p>For accessibility reasons, please use the site on a computer</p>
+    </div>
     <!-- 
     <div class="arrows">
       <div class="left-arrow">
@@ -943,4 +960,5 @@
       });
     </script>
   </body>
+  <script src="js/loader.js" defer></script>
 </html>
